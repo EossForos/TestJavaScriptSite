@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar, Nav, FormControl, Container, Form, Button} from "react-bootstrap";
+import {Navbar, Nav, FormControl, Container, Form, Button, } from "react-bootstrap";
 import logo from './logo192.png'
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
@@ -49,10 +49,10 @@ class Header extends Component {
 
                 <Router>
                     <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="about" component={About} />
-                        <Route exact path="contacts" component={Contacts} />
-                        <Route exact path="blog" component={Blog} />
+                        <Route exact strict path="/" component={Home} />
+                        <Route exact strict path="/about" component={About} />
+                        <Route exact strict path="/contacts" component={Contacts} />
+                        <Route exact strict path="/blog" component={Blog} />
                     </Switch>
                 </Router>
 
